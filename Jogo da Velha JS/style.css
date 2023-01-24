@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border: 2px solid #fff;
+}
+
+.blocos {
+    flex: 1 0 calc(33.3333% - 4px);
+    height: calc(33.3333% - 4px);
+    background-color: #1e1e1e;
+    border: 2px solid #fff;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.blocos:hover {
+    background-color: #fff;
+    color: #1e1e1e;
+    cursor: pointer;
+}
+
+.blocos.desativado {
+    background-color: #fff;
+    color: #1e1e1e;
+}
